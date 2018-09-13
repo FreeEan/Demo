@@ -94,8 +94,7 @@ public class Department {
 	}
 
 	/**
-	 * 通过部门查询该部门下员工信息
-	 * 返回：姓名、工号、性别、年龄、职务、职务编号
+	 * 通过部门查询该部门下员工信息 返回：姓名、工号、性别、年龄、职务、职务编号
 	 */
 	public void info() {
 		for (int i = 0; i < this.getEmployee().length; i++) {
@@ -105,10 +104,10 @@ public class Department {
 			}
 			System.out.println("姓名：" + this.getEmployee()[i].getEmployNmae() + "\n工号："
 					+ this.getEmployee()[i].getEmployNo() + "\n性别：" + this.getEmployee()[i].getEmploySex() + "\n年龄："
-					// + this.getEmployee()[i].getEmployAge() + "\n部门："
-					// + this.getEmployee()[i].getDepartment().getDepartmentNmae() + "\n部门编号："
-					+ this.getEmployee()[i].getDepartment().getDepartmentNo() + "\n职务："
-					+ this.getEmployee()[i].getDuties().getDutiesName() + "\n职务编号："
+					+ this.getEmployee()[i].getEmployAge()
+					// + "\n部门："+ this.getEmployee()[i].getDepartment().getDepartmentNmae()
+					// + "\n部门编号："+ this.getEmployee()[i].getDepartment().getDepartmentNo()
+					+ "\n职务：" + this.getEmployee()[i].getDuties().getDutiesName() + "\n职务编号："
 					+ this.getEmployee()[i].getDuties().getDutiesNo());
 			System.out.println("************************************");
 		}
